@@ -1,0 +1,59 @@
+# Brazilian Portuguese UI overrides for Shin's umineko game.
+# Keys are copied verbatim from upstream/shin/localization/umineko.en.toml
+# at commit 8875fd49f1961265d4101c541027a11db629aa9b (branch fork).
+# Install as localized.toml in the assets directory. This affects engine UI only;
+# scenario dialogue is translated via mod.rom.
+# 34 long Bernkastel-game dialogue keys in the reference list remain untranslated.
+
+# reference key #35
+"ロードします。よろしいですか？" = "Carregar este marcador?"
+# reference key #36
+"このセーブデータを削除します。よろしいですか？" = "Excluir este marcador?"
+# reference key #37
+"セーブを行います。よろしいですか？" = "Salvar neste marcador?"
+# reference key #38
+"セーブを行います。@r内容は上書きされますが、よろしいですか？" = "Salvar neste marcador?@rO conteúdo atual será substituído."
+# reference key #39
+"データがありません" = "Marcador vazio"
+# reference key #40
+"カーソル位置" = "Posição do cursor"
+# reference key #41
+"ゲーム内現在位置" = "Posição atual no jogo"
+# reference key #42
+"カーソル位置/ゲーム内現在位置" = "Posição do cursor / posição no jogo"
+# reference key #43
+"先頭" = "Início"
+# reference key #44
+"後尾" = "Fim"
+# reference key #45
+"設定を初期値に戻します。よろしいですか？" = "Restaurar todas as configurações para os valores padrão?"
+# reference key #46
+"ゲームを終了して、タイトル画面に戻ります。@rよろしいですか？" = "Sair do jogo e voltar à tela de título?@rDeseja continuar?"
+# reference key #47
+"次のチャプターか選択肢までスキップします。@rよろしいですか？" = "Pular até o próximo capítulo ou escolha?@rDeseja continuar?"
+# reference key #48
+"前のチャプターに戻ります。@rよろしいですか？" = "Voltar ao capítulo anterior?@rDeseja continuar?"
+# reference key #49
+"{}時間 {}分" = "{}h {}min"
+# reference key #50
+"{minutes}分" = "{minutes} min"
+# reference key #51
+"はい" = "Sim"
+# reference key #52
+"いいえ" = "Não"
+# reference key #53
+"シーンジャンプを実行します。@rよろしいですか？" = "Ir para a linha selecionada?@rDeseja continuar?"
+# reference key #54
+"セーブデータを更新中です。@r電源を切ったり、ソフトを終了したりしないでください。" = "Salvando dados.@rNão desligue o console nem feche o jogo."
+# reference key #55
+"このシナリオを開始します。@rよろしいですか？" = "Iniciar este cenário?@rDeseja continuar?"
+# reference key #56
+"本編シナリオの全てと、追加シナリオの一部をアンロックします。よろしいですか？@r@z75.一度アンロックしたら元の状態に戻すことはできません。ご注意ください。" = "Todos os oito episódios principais e parte dos episódios extras@rserão desbloqueados. Você aceita?@r@z75.Após desbloquear, não será possível voltar ao estado original. Tenha cuidado."
+# reference key #57
+"オートモード中とMusicBoxの楽曲再生中は、@r本体の自動スリープ機能が動作しないようになります。" = "Durante o modo automático e a reprodução na Music Box,@ro modo de suspensão automático do console será desativado."
+# reference key #58
+"確認" = "OK"
+# reference key #59
+"達成率:100％" = "Conclusão: 100％"
+# reference key #60
+"達成率:{}.{}％" = "Conclusão: {}.{}％"

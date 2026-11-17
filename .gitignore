@@ -1,0 +1,10 @@
+work/
+dist/
+*.rom
+*.snr
+*.nsp
+*.pfs0
+SAVEDATA
+__pycache__/
+*.py[cod]
+.venv/
