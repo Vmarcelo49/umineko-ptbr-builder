@@ -1,5 +1,7 @@
 # umineko-ptbr-builder
 
+Repo público: https://github.com/Vmarcelo49/umineko-ptbr-builder
+
 Reproducible builder for the Brazilian Portuguese patch of *Umineko no Naku
 Koro ni Saku* running on [AuroraWright/shin](https://github.com/AuroraWright/shin).
 
