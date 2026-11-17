@@ -44,6 +44,8 @@ REPOS = {
     "florescer": ("https://github.com/Monaco-a-Knox/Florescer.git", "main", "ae520db7158dbb94e4ed8ae1c4e6a21eb5949751"),
 }
 RELEASE = "https://github.com/umineko-project/umineko-scripting/releases/download/z4067"
+BUILDER_RELEASE = "https://github.com/Vmarcelo49/umineko-ptbr-builder/releases/download/prebuilt"
+SHIN_ASSET = "shin-linux-x86_64"
 PT_ZIP = "umineko-pt-scripts_r4067_dev.zip"
 FONTS = {
     "newrodin-medium.fnt": "https://raw.githubusercontent.com/Lovahi/umineko-catbox-spanish/master/romfs/newrodin-medium.fnt",
@@ -118,6 +120,14 @@ def ensure_tools(work: Path, step: Step) -> dict[str, str]:
             found = shutil.which(name)
             if found:
                 tools[name] = found
+    if "shin" not in tools:
+        step.say("fetching prebuilt Shin binary from GitHub Release")
+        try:
+            download(f"{BUILDER_RELEASE}/{SHIN_ASSET}", prebuilt / "shin", step)
+            (prebuilt / "shin").chmod(0o755)
+            tools["shin"] = str(prebuilt / "shin")
+        except Exception as exc:
+            step.say(f"release download unavailable ({exc}); build Shin with cargo")
     if "hactool" not in tools:
         step.say("hactool not found; building it from source")
         src = work / "hactool-src"

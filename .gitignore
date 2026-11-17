@@ -8,3 +8,6 @@ SAVEDATA
 __pycache__/
 *.py[cod]
 .venv/
+# Large prebuilt engine binary is distributed as a GitHub Release asset
+prebuilt/*/shin
+prebuilt/*/shin.exe
